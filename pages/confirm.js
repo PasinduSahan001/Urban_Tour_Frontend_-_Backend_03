@@ -1,9 +1,9 @@
 import React from 'react'
-import Map from './Component/Map'
-import styles from '../styles/Confirm.module.css'
+import Map from './component/Map'
+import styles from '../styles/confirm.module.css'
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
-import RideSelector from './Component/RideSelector'
+import RideSelector from './component/RideSelector'
 import Link from 'next/link'
 
 import Navbar from './component/Navbar'

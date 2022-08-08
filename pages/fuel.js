@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from '../styles/Fuel.module.css'
-import Map from './Component/Map'
+import Map from './component/Map'
 import Link from 'next/link'
 import Navbar from './component/Navbar'
 import { getUser } from "../src/graphql/queries";
