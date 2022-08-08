@@ -1,7 +1,7 @@
 import mapboxgl from 'mapbox-gl'
 import { useEffect } from 'react'
 
-import { fuelStation } from "../data/fuelStation";
+import { fuelStation } from "./data/fuelStation";
 
 
 mapboxgl.accessToken = 'pk.eyJ1IjoicGFzaW5kdS1zYWhhbiIsImEiOiJjbDZhcWNjZnkxcTZ4M2JuM2EyenljZzNtIn0.1kQi7s34sfJys5XlkCFahw';
