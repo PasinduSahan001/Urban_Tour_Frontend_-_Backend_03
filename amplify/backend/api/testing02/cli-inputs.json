@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "serviceConfiguration": {
+    "apiName": "testing02",
+    "serviceName": "AppSync",
+    "defaultAuthType": {
+      "mode": "AMAZON_COGNITO_USER_POOLS",
+      "cognitoUserPoolId": "authtesting02551ea1d3"
+    },
+    "additionalAuthTypes": [
+      {
+        "mode": "API_KEY",
+        "expirationTime": 50,
+        "apiKeyExpirationDate": "2022-09-24T12:34:25.148Z",
+        "keyDescription": "."
+      }
+    ]
+  }
+}

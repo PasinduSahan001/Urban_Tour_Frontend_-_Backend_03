@@ -1,0 +1,57 @@
+# This "input" configures a global authorization rule to enable public access to
+# all models in this schema. Learn more about authorization rules here: https://docs.amplify.aws/cli/graphql/authorization-rules
+input AMPLIFY { globalAuthRule: AuthRule = { allow: public } } # FOR TESTING ONLY!
+
+type User
+  @model
+  @auth(rules: [{ allow: owner }, { allow: public, operations: [read] }]) {
+  id: ID!
+  firstName: String
+  lastName: String
+  dob : AWSDate
+  description: String
+  address: String
+  nic: String
+  mobileNumber: AWSPhone
+  email: AWSEmail
+  vehicles: [Vehicle] @hasMany(indexName:"byVehicle", fields:["id"])
+  bicycle: [Bicycle] @hasMany(indexName:"byBicycle", fields:["id"])
+  distance: Float
+  avgSpeed: Float
+  calories: Float
+  spendTime: AWSTime
+}
+
+type Bicycle 
+  @model
+  @auth(rules: [{ allow: owner }, { allow: public, operations: [read] }]){
+    id: ID!
+    distance: Float
+    model: String
+    ownerID: ID! @index(name: "byBicycle" sortKeyFields:["distance"])
+    category: String
+  }
+
+type FuelStation
+  @model
+  @auth(rules: [{ allow: owner }, { allow: public, operations: [read] }]){
+    id:ID!
+    fuelStationName:String
+    locationCordinates: String
+    availPetrol92:Float
+    availPetrol95:Float
+    availDiesel:Float
+    availSuperDiesel:Float
+  }
+
+type Vehicle 
+  @model
+  @auth(rules: [{ allow: owner }, { allow: public, operations: [read] }]){
+  id:ID!
+  fuelType: String! 
+  ownerID: ID! @index(name: "byVehicle", sortKeyFields:["numberPlate"])
+  numberPlate: String!
+  model: String
+  category: String
+}
+
