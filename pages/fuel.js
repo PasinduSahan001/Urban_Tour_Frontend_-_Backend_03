@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import styles from '../styles/Fuel.module.css'
 import Map from './Component/Map'
 import Link from 'next/link'
-import FuelStationSelector from './Component/FuelStationSelector'
-import VehicleSelector from './Component/VehicleSelector'
 import Navbar from './component/Navbar'
 import { getUser } from "../src/graphql/queries";
 import { withSSRContext } from "aws-amplify";
@@ -49,15 +47,7 @@ export async function getServerSideProps({ req, res }) {
 
 
 const Fuel = ({ user, mode }) => {
-  console.log("Fuel")
-  //console.log(user.vehicles.items)
-  try {
-    const [vehicle, setVehicle] = useState(mode === 'EDIT' ? user.vehicles.items : '');
-  }
-  catch {
-    const [vehicle, setVehicle] = useState('');
-  }
-  console.log("Vehi")
+  const [vehicle, setVehicle] = useState(mode === 'EDIT' ? user.vehicles.items : '');
   const [type, set_Type] = useState([])
 
 
