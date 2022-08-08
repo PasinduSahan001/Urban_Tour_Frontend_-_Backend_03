@@ -6,7 +6,7 @@ import Navbar from './component/Navbar'
 import { getUser } from "../src/graphql/queries";
 import { withSSRContext } from "aws-amplify";
 
-import { fuelStation } from "./data/fuelStation";
+import { fuelStation } from "./component/data/fuelStation";
 import Footer from './component/Footer'
 
 
