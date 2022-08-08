@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import styles from '../styles/Profile.module.css'
 import Link from 'next/link'
 import Navbar from './component/Navbar'
 import Footer from './component/Footer'
@@ -9,8 +8,6 @@ import { Form } from "react-bootstrap";
 import { getUser } from "../src/graphql/queries";
 import { createUser, updateUser } from "../src/graphql/mutations";
 import { withSSRContext } from "aws-amplify";
-import { API } from "@aws-amplify/api";
-import { Auth } from "@aws-amplify/auth";
 
 export async function getServerSideProps({ req, res }) {
     const { Auth, API } = withSSRContext({ req });
@@ -46,9 +43,7 @@ export async function getServerSideProps({ req, res }) {
     }
 }
 
-export default function profile({ user, error, mode }) {
-    console.log("UserEdit")
-    console.log(user)
+const Profile = ({ user, error, mode }) => {
     const [firstName, setFirstName] = useState(mode === 'EDIT' ? user.firstName : '');
     const [secondName, setSecondName] = useState(mode === 'EDIT' ? user.lastName : '');
     const [description, setDescription] = useState(mode === 'EDIT' ? user.description : '');
@@ -60,7 +55,6 @@ export default function profile({ user, error, mode }) {
     const [avgSpeed, setAvgSpeed] = useState(mode === 'EDIT' ? user.avgSpeed : '');
     const [calories, setCalories] = useState(mode === 'EDIT' ? user.calories : '');
     const [dob, setdob] = useState(mode === 'EDIT' ? user.dob : '');
-    //const [vehicle, setVehicle] = useState(mode === 'EDIT' ? user.vehicle : '');
     return (
         <div>
             <Navbar />
@@ -88,9 +82,7 @@ export default function profile({ user, error, mode }) {
                                                         </button>
                                                     </Link>
                                                 </div>
-
                                             </div>
-
                                         </div>
                                     </div>
                                     <div className='row pt-3 pb-3'>
@@ -207,3 +199,5 @@ export default function profile({ user, error, mode }) {
         </div>
     )
 }
+
+export default Profile
