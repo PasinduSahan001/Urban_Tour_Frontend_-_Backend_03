@@ -8,7 +8,7 @@ const Notifications = () => {
             <div className={style.body}>
                 <div className='row mt-5 pt-3'>
                     <div className='text-center'>
-                        Currently, you don't have any new notifications.
+                        Currently, you do not have any new notifications.
                     </div>
                 </div>
 
