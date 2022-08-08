@@ -6,6 +6,7 @@ import { Auth } from "@aws-amplify/auth";
 import Navbar from "./component/Navbar";
 import styles from '../styles/Edit-bicycle.module.css'
 import Link from "next/link";
+import Footer from "./component/Footer";
 
 const EditUser = () => {
     const [model, setModel] = useState('');
@@ -38,8 +39,11 @@ const EditUser = () => {
     };
     return (
         <div className={styles.body}>
+            <title>
+                Urban Tour/Edit
+            </title>
+            <Navbar />
             <div className="d-flex flex-column justify-content-center w-100 h-100 text-white">
-                <Navbar />
                 <h1 className="align-self-center">Add your bicycle</h1>
                 <Form className="w-50 align-self-center">
                     <Form.Group className="mt-2" controlId="model">
@@ -77,11 +81,7 @@ const EditUser = () => {
                     </Form.Group>
                     <div className="row mt-4">
                         <div className="col-6 text-center">
-                            <button
-                                type="submit"
-                                onClick={submitHandler}
-                                className="btn btn-primary"
-                            >
+                            <button className="btn btn-primary disabled">
                                 Submit
                             </button>
                         </div>
@@ -93,6 +93,7 @@ const EditUser = () => {
                     </div>
                 </Form>
             </div>
+            <Footer />
         </div>
     );
 };

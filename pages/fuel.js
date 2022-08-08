@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from '../styles/Fuel.module.css'
-import Map from './component/Map'
+import Map from './Component/Map'
 import Link from 'next/link'
 import Navbar from './component/Navbar'
 import { getUser } from "../src/graphql/queries";
@@ -101,32 +101,28 @@ const Fuel = ({ user, mode }) => {
 
   return (
     <div>
+      <title>
+        Urban Tour/Fuel
+      </title>
       <Navbar />
-      <div className='bg-dark'>
+      <div className='bg-dark px-3'>
         <div className='row'>
-          <div className='col-10'>
-            <div className='mt-5 mx-3 p-2'>
+          <div className='col-8'>
+            <div className=' mx-3'>
               <Link href="/">
                 <a className="btn btn-danger" role="button">&#128281;</a>
               </Link>
             </div>
           </div>
-          <div className='col-2 mt-5 pt-2'>
-            <div className="btn-group">
-              <button type="button" className="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                Fuel type
-              </button>
-              <ul className="dropdown-menu">
-                <li><a className="dropdown-item">Petrol</a></li>
-                <li><a className="dropdown-item">Diesel</a></li>
-              </ul>
+        </div>
+        <div className=''>
+          <div className="row">
+            <div className="">
+              <Map type={type} />
             </div>
           </div>
-        </div>
-        <div className={styles.container}>
-          <Map type={type} />
-          <div className={styles.sub}>
-            <div className=''>
+          <div className="row">
+            <div className={styles.sub}>
               <div className='row'>
                 <div className='col-lg-6 text-center mx-auto mt-2 px-5'>
                   <div className="row">
@@ -139,31 +135,36 @@ const Fuel = ({ user, mode }) => {
                     <div className="table-responsive">
                       <table className="table table-borderless text-white ">
                         <thead>
-
                         </thead>
                         <tbody>
                           <tr>
                             <th scope="col"></th>
-                            <th scope="col "><div className="text-success"> P92 </div></th>
-                            <th scope="col "><div className="text-success"> P95</div></th>
-                            <th scope="col "><div className="text-success"> D</div></th>
-                            <th scope='col '><div className="text-success"> SD</div></th>
-
+                            <th scope="col ">
+                              <div className="text-success"> P92 </div>
+                            </th>
+                            <th scope="col ">
+                              <div className="text-success"> P95</div>
+                            </th>
+                            <th scope="col ">
+                              <div className="text-success"> D</div>
+                            </th>
+                            <th scope='col '>
+                              <div className="text-success"> SD</div>
+                            </th>
                           </tr>
-
-                          {fuelStation_arr.map((x, i) => <tr key={i}>
-                            <td className='text-start text-wrap col-6'>{x.name}</td>
-                            <td className='col-1'>{x.P92}</td>
-                            <td className='col-1'>{x.P95}</td>
-                            <td className='col-1'>{x.D}</td>
-                            <td className='col-1'>{x.SD}</td>
-
-                          </tr>)}
+                          {fuelStation_arr.map((x, i) =>
+                            <tr key={i}>
+                              <td className='text-start text-wrap col-6'>{x.name}</td>
+                              <td className='col-1'>{x.P92}</td>
+                              <td className='col-1'>{x.P95}</td>
+                              <td className='col-1'>{x.D}</td>
+                              <td className='col-1'>{x.SD}</td>
+                            </tr>
+                          )}
                         </tbody>
                       </table>
                     </div>
                   </div>
-
                 </div>
                 <div className='col-lg-6 text-center mx-auto mt-2 px-5'>
                   <div className="row">
@@ -187,20 +188,8 @@ const Fuel = ({ user, mode }) => {
                       </table>
                     </div>
                   </div>
-
-
                 </div>
               </div>
-              <div className="row">
-                <div className='col-lg-6 text-center mx-auto px-5'>
-                  <div className="row">
-
-                  </div>
-                </div>
-
-
-              </div>
-
             </div>
           </div>
         </div>

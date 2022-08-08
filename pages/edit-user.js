@@ -95,10 +95,12 @@ const EditUser = ({ user, error, mode }) => {
         );
     }
     return (
-        <div className={styles.body}>
+        <div className='bg-dark'>
+            <title>
+                Urban Tour/Edit
+            </title>
             <Navbar />
             <div className="d-flex flex-column justify-content-center w-100 h-100 text-white">
-
                 <h1 className="align-self-center">Edit User Details</h1>
                 <Form className="w-50 align-self-center">
                     <Form.Group className="mt-2" controlId="firstName">
@@ -106,7 +108,7 @@ const EditUser = ({ user, error, mode }) => {
                         <Form.Control
                             type="text"
                             value={firstName}
-                            placeholder="Enter Your First Name"
+                            placeholder="Enter your First Name"
                             onChange={(event) => {
                                 setFirstName(event.target.value);
                             }}
@@ -117,7 +119,7 @@ const EditUser = ({ user, error, mode }) => {
                         <Form.Control
                             type="text"
                             value={secondName}
-                            placeholder="Enter Your Second Name"
+                            placeholder="Enter your Second Name"
                             onChange={(event) => {
                                 setSecondName(event.target.value);
                             }}
@@ -128,7 +130,7 @@ const EditUser = ({ user, error, mode }) => {
                         <Form.Control
                             type="date"
                             value={dob}
-                            placeholder="Enter Your date of birth"
+                            placeholder="Enter your date of birth"
                             onChange={(event) => {
                                 setdob(event.target.value);
                             }}
@@ -139,7 +141,7 @@ const EditUser = ({ user, error, mode }) => {
                         <Form.Control
                             type="text"
                             value={nic}
-                            placeholder="Enter Your NIC Number"
+                            placeholder="Enter your NIC number"
                             onChange={(event) => {
                                 setNic(event.target.value);
                             }}
@@ -150,7 +152,7 @@ const EditUser = ({ user, error, mode }) => {
                         <Form.Control
                             type="text"
                             value={mobileNumber}
-                            placeholder="Enter Your Mobile Number"
+                            placeholder="Enter your mobile number with country code"
                             onChange={(event) => {
                                 setMbileNumber(event.target.value);
                             }}
@@ -161,7 +163,7 @@ const EditUser = ({ user, error, mode }) => {
                         <Form.Control
                             type="text"
                             value={email}
-                            placeholder="Enter Your email address"
+                            placeholder="Enter your email address"
                             onChange={(event) => {
                                 setEmail(event.target.value);
                             }}
@@ -173,13 +175,13 @@ const EditUser = ({ user, error, mode }) => {
                             as="textarea"
                             value={address}
                             rows={3}
-                            placeholder="Enter Your Address"
+                            placeholder="Enter your Address"
                             onChange={(event) => {
                                 setAddress(event.target.value);
                             }}
                         />
                     </Form.Group>
-                    <div className="row mt-4">
+                    <div className="row mt-4 pb-5">
                         <div className="col-6 text-center">
                             <button
                                 type="submit"
@@ -196,7 +198,6 @@ const EditUser = ({ user, error, mode }) => {
                         </div>
                     </div>
                 </Form>
-
             </div>
             <Footer />
         </div>

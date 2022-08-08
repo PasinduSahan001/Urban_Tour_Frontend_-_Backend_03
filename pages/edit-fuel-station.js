@@ -71,6 +71,9 @@ const EditUser = ({ error, mode, station }) => {
     };
     return (
         <div className="d-flex flex-column justify-content-center w-100 h-100">
+            <title>
+                Urban Tour/Edit
+            </title>
             <Navbar />
             <h1 className="align-self-center">Edit Station Details</h1>
             <Form className="w-50 align-self-center">

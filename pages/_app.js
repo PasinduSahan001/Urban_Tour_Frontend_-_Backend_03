@@ -15,9 +15,13 @@ function MyApp({ Component, pageProps }) {
   }, []);
 
   return (
-    <Authenticator>
-      <Component {...pageProps} />
-    </Authenticator>
+    <div>
+
+      <Authenticator>
+        <Component {...pageProps} />
+      </Authenticator>
+    </div>
+
   );
 }
 export default MyApp;

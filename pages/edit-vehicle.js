@@ -42,9 +42,11 @@ const EditUser = () => {
     };
     return (
         <div className={styles.body}>
+            <title>
+                Urban Tour/Edit
+            </title>
             <Navbar />
-            <div className="d-flex flex-column justify-content-center w-100 h-100 bg-dark mt-5 text-white">
-
+            <div className="d-flex flex-column justify-content-center w-100 h-100 bg-dark text-white">
                 <h1 className="align-self-center">Add your vehicle details</h1>
                 <Form className="w-50 align-self-center">
                     <Form.Group className="mt-2" controlId="model">
@@ -107,9 +109,7 @@ const EditUser = () => {
                             </Link>
                         </div>
                     </div>
-
                 </Form>
-
             </div>
             <Footer />
         </div>

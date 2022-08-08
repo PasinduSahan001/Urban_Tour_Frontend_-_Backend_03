@@ -2,11 +2,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Navbar from './component/Navbar'
 import Footer from './component/Footer'
-
 import React, { useState } from "react";
-import { Form } from "react-bootstrap";
 import { getUser } from "../src/graphql/queries";
-import { createUser, updateUser } from "../src/graphql/mutations";
 import { withSSRContext } from "aws-amplify";
 
 export async function getServerSideProps({ req, res }) {
@@ -57,8 +54,11 @@ const Profile = ({ user, error, mode }) => {
     const [dob, setdob] = useState(mode === 'EDIT' ? user.dob : '');
     return (
         <div>
+            <title>
+                Urban Tour/Profile
+            </title>
             <Navbar />
-            <div className="justify-content-center bg-dark mt-5">
+            <div className="justify-content-center bg-dark">
                 <div className='container bg-dark'>
                     <div className='row bg-dark'>
                         <div className='col-lg-6 align-self-center'>

@@ -12,7 +12,7 @@ const Navbar = () => {
     };
     return (
         <div className="">
-            <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <nav className="navbar navbar-expand-lg navbar-dark bg-dark ">
                 <div className="container-fluid">
                     <a className="navbar-brand">Urban Tour</a>
                     <button type="button" className="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">

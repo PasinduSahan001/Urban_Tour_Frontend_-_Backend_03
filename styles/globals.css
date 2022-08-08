@@ -28,7 +28,7 @@ a {
 
 .map {
   margin-top: 3%;
-  flex: 1;
+  height: 50vh;
   border: 2px solid #ffffff;
 }
 
