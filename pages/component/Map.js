@@ -44,7 +44,7 @@ const Map = (props) => {
 
     add_control()
 
-  }, [props.pickup_cordinates, props.dropoff_cordinates])
+  }, [props.pickup_cordinates, props.dropoff_cordinates, props.type])
 
   const add_to_map = (map, cordinates) => {
     const marker1 = new mapboxgl.Marker()
