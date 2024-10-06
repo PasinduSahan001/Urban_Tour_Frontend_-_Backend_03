@@ -1,4 +1,4 @@
-![Logo](https://github.com/PasinduSahan001/Resources/blob/e72255b2280698c3477a729df7c0fb27b13bef18/Urban%20Tour/Logo_2-min.png)
+![Logo](https://github.com/PasinduSahan001/Urban_Tour_Frontend_-_Backend_03/blob/38cf0e5f77fe770b285f00f3591f70abde39f18e/Resources_ReadME/Logo_2-min.png)
 
 ## Project Overview
 **Urban_Tour** is a group project developed in 2022 as part of our Cloud Computing - Mini Project module in our degree program. The project aimed at addressing transportation challenges during a fuel crisis in Sri Lanka. It provides a platform for users to rent bicycles 🚲 as an alternative means of transport, allowing them to navigate their surroundings more easily. Additionally, we implemented an automated fuel quota system to streamline access to limited fuel supplies ⛽. This system recognizes vehicle number plates and connects to government databases to manage fuel quotas efficiently.
@@ -49,23 +49,23 @@ The system was designed for easy navigation and efficient fuel management. Users
 ### Screenshots
 Please refer to the included screenshots that showcase the software interface, hardware, and image processing results.
 
-![Login Screenshot](https://github.com/PasinduSahan001/Resources/blob/549945999be7cd0890082bea324b2496c3fb05bf/Urban%20Tour/Screenshots/Login-min.png)
+![Login Screenshot](https://github.com/PasinduSahan001/Urban_Tour_Frontend_-_Backend_03/blob/38cf0e5f77fe770b285f00f3591f70abde39f18e/Resources_ReadME/Screenshots/Login-min.png)
 
-![Home Screenshot](https://github.com/PasinduSahan001/Resources/blob/549945999be7cd0890082bea324b2496c3fb05bf/Urban%20Tour/Screenshots/Home-min.png)
+![Home Screenshot](https://github.com/PasinduSahan001/Urban_Tour_Frontend_-_Backend_03/blob/38cf0e5f77fe770b285f00f3591f70abde39f18e/Resources_ReadME/Screenshots/Home-min.png)
 
-![Search Screenshot](https://github.com/PasinduSahan001/Resources/blob/549945999be7cd0890082bea324b2496c3fb05bf/Urban%20Tour/Screenshots/Search-min.png)
+![Search Screenshot](https://github.com/PasinduSahan001/Urban_Tour_Frontend_-_Backend_03/blob/38cf0e5f77fe770b285f00f3591f70abde39f18e/Resources_ReadME/Screenshots/Search-min.png)
 
-![Confirm Screenshot](https://github.com/PasinduSahan001/Resources/blob/549945999be7cd0890082bea324b2496c3fb05bf/Urban%20Tour/Screenshots/Confirm-min.png)
+![Confirm Screenshot](https://github.com/PasinduSahan001/Urban_Tour_Frontend_-_Backend_03/blob/38cf0e5f77fe770b285f00f3591f70abde39f18e/Resources_ReadME/Screenshots/Confirm-min.png)
 
-![Fuel Screenshot](https://github.com/PasinduSahan001/Resources/blob/549945999be7cd0890082bea324b2496c3fb05bf/Urban%20Tour/Screenshots/Fuel-min.png)
+![Fuel Screenshot](https://github.com/PasinduSahan001/Urban_Tour_Frontend_-_Backend_03/blob/38cf0e5f77fe770b285f00f3591f70abde39f18e/Resources_ReadME/Screenshots/Fuel-min.png)
 
-![Profile Screenshot](https://github.com/PasinduSahan001/Resources/blob/549945999be7cd0890082bea324b2496c3fb05bf/Urban%20Tour/Screenshots/Profile-min.png)
+![Profile Screenshot](https://github.com/PasinduSahan001/Urban_Tour_Frontend_-_Backend_03/blob/38cf0e5f77fe770b285f00f3591f70abde39f18e/Resources_ReadME/Screenshots/Profile-min.png)
 
-![Edit User Screenshot](https://github.com/PasinduSahan001/Resources/blob/549945999be7cd0890082bea324b2496c3fb05bf/Urban%20Tour/Screenshots/Edit%20User-min.png)
+![Edit User Screenshot](https://github.com/PasinduSahan001/Urban_Tour_Frontend_-_Backend_03/blob/38cf0e5f77fe770b285f00f3591f70abde39f18e/Resources_ReadME/Screenshots/Edit%20User-min.png)
 
-![PCB](https://github.com/PasinduSahan001/Resources/blob/37a56670d301226e5b7bfcf64e7d1a16448b8bd1/Urban%20Tour/PCB.jpg)
+![PCB](https://github.com/PasinduSahan001/Urban_Tour_Frontend_-_Backend_03/blob/38cf0e5f77fe770b285f00f3591f70abde39f18e/Resources_ReadME/PCB.jpg)
 
-![Image Processing Screenshot](https://github.com/PasinduSahan001/Resources/blob/86c7a66b6804b8d1b925211540d4e38e35eaa26f/Urban%20Tour/Image%20Processing.png)
+![Image Processing Screenshot](https://github.com/PasinduSahan001/Urban_Tour_Frontend_-_Backend_03/blob/38cf0e5f77fe770b285f00f3591f70abde39f18e/Resources_ReadME/Image%20Processing.png)
 
 ## Acknowledgements
 🙏 We would like to thank our project advisor and everyone who supported us during the development process.
