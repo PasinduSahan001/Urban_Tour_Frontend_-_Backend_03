@@ -67,6 +67,10 @@ Please refer to the included screenshots that showcase the software interface, h
 
 ![Image Processing Screenshot](https://github.com/PasinduSahan001/Urban_Tour_Frontend_-_Backend_03/blob/38cf0e5f77fe770b285f00f3591f70abde39f18e/Resources_ReadME/Image%20Processing.png)
 
+## Video Demonstration
+
+🎥 For a demonstration of the Urban_Tour in action, check out our video on Google Drive: [Video Demonstration](https://drive.google.com/file/d/1Jg8J48Ffkltl8rs6fXgWtsulmawdVUNU/view?usp=sharing)
+
 ## Acknowledgements
 🙏 We would like to thank our project advisor and everyone who supported us during the development process.
 
